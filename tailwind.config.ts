@@ -7,9 +7,11 @@ const config: Config = {
     extend: {
       colors: {
         bg: "#08101f",
+        navy: "#08101f",
         card: "#0f1e36",
         border: "rgba(30,77,140,0.35)",
         gold: "#c8a84b",
+        "gold-light": "#dfc06a",
         blue: "#2563b0",
         text: "#dce4f0",
         muted: "#7a8da8"

@@ -1,70 +1,70 @@
-import { TasksPayload } from "@/lib/types";
+"use client";
 
-const apiBase = "https://api.github.com";
+import type { TasksPayload } from "@/lib/types";
 
-const getEnv = (key: string) => {
-  const value = process.env[key];
-  if (!value) {
-    throw new Error(`Missing ${key} environment variable`);
-  }
-  return value;
+const API_BASE = "https://api.github.com";
+const REPO = "Spyders0311/gary-board";
+const FILE_PATH = "tasks.json";
+const TOKEN_KEY = "gary_board_token";
+
+export const getToken = (): string | null => {
+  if (typeof window === "undefined") return null;
+  return localStorage.getItem(TOKEN_KEY);
 };
 
-export type GithubFileResponse = {
+export const setToken = (token: string): void => {
+  localStorage.setItem(TOKEN_KEY, token.trim());
+};
+
+export const clearToken = (): void => {
+  localStorage.removeItem(TOKEN_KEY);
+};
+
+export type GitHubFile = {
   sha: string;
   content: string;
-  encoding: "base64";
 };
 
-export const fetchTasksFile = async (): Promise<GithubFileResponse> => {
-  const repo = getEnv("GITHUB_REPO");
-  const path = getEnv("GITHUB_TASKS_PATH");
-  const token = getEnv("GITHUB_TOKEN");
+const authHeaders = (token: string) => ({
+  Authorization: `Bearer ${token}`,
+  Accept: "application/vnd.github+json",
+  "Content-Type": "application/json",
+});
 
-  const res = await fetch(`${apiBase}/repos/${repo}/contents/${path}`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-      Accept: "application/vnd.github+json"
-    },
-    cache: "no-store"
+export const fetchTasks = async (): Promise<{ data: TasksPayload; sha: string }> => {
+  const token = getToken();
+  if (!token) throw new Error("NO_TOKEN");
+
+  const res = await fetch(`${API_BASE}/repos/${REPO}/contents/${FILE_PATH}`, {
+    headers: authHeaders(token),
+    cache: "no-store",
   });
 
-  if (!res.ok) {
-    const message = await res.text();
-    throw new Error(`GitHub fetch failed: ${res.status} ${message}`);
-  }
+  if (res.status === 401) throw new Error("INVALID_TOKEN");
+  if (!res.ok) throw new Error(`GitHub fetch failed: ${res.status}`);
 
-  return (await res.json()) as GithubFileResponse;
+  const file = (await res.json()) as GitHubFile;
+  const decoded = atob(file.content.replace(/\n/g, ""));
+  const data = JSON.parse(decoded) as TasksPayload;
+  return { data, sha: file.sha };
 };
 
-export const parseTasksFile = (file: GithubFileResponse): TasksPayload => {
-  const decoded = Buffer.from(file.content, "base64").toString("utf-8");
-  return JSON.parse(decoded) as TasksPayload;
-};
+export const saveTasks = async (payload: TasksPayload, sha: string): Promise<void> => {
+  const token = getToken();
+  if (!token) throw new Error("NO_TOKEN");
 
-export const saveTasksFile = async (payload: TasksPayload, sha: string) => {
-  const repo = getEnv("GITHUB_REPO");
-  const path = getEnv("GITHUB_TASKS_PATH");
-  const token = getEnv("GITHUB_TOKEN");
-  const content = Buffer.from(JSON.stringify(payload, null, 2)).toString("base64");
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
 
-  const res = await fetch(`${apiBase}/repos/${repo}/contents/${path}`, {
+  const res = await fetch(`${API_BASE}/repos/${REPO}/contents/${FILE_PATH}`, {
     method: "PUT",
-    headers: {
-      Authorization: `Bearer ${token}`,
-      Accept: "application/vnd.github+json"
-    },
+    headers: authHeaders(token),
     body: JSON.stringify({
-      message: "Update tasks",
+      message: "chore: update tasks via Gary Board",
       content,
-      sha
-    })
+      sha,
+    }),
   });
 
-  if (!res.ok) {
-    const message = await res.text();
-    throw new Error(`GitHub update failed: ${res.status} ${message}`);
-  }
-
-  return res.json();
+  if (res.status === 401) throw new Error("INVALID_TOKEN");
+  if (!res.ok) throw new Error(`GitHub save failed: ${res.status}`);
 };
