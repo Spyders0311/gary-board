@@ -156,6 +156,73 @@
         "marketing",
         "10-8"
       ]
+    },
+    {
+      "id": "12",
+      "title": "Provide Vercel token for Gary",
+      "description": "vercel.com/account/tokens \u2014 Gary needs this to deploy autonomously from cron jobs.",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "Kyle",
+      "createdAt": "2026-02-24T23:32:20Z",
+      "updatedAt": "2026-02-24T23:32:20Z",
+      "tags": [
+        "infra"
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Provide Twitter/X API keys",
+      "description": "developer.twitter.com \u2014 5 keys needed. Gary has xurl skill ready. Needed for Age Runner + 10-8 Video social.",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "Kyle",
+      "createdAt": "2026-02-24T23:32:20Z",
+      "updatedAt": "2026-02-24T23:32:20Z",
+      "tags": [
+        "marketing"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Connect LinkedIn page for 10-8 Video",
+      "description": "Give Gary access to 10-8 Video LinkedIn page for B2B content posting.",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "Kyle",
+      "createdAt": "2026-02-24T23:32:20Z",
+      "updatedAt": "2026-02-24T23:32:20Z",
+      "tags": [
+        "marketing",
+        "10-8"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Connect Google Calendar",
+      "description": "Share calendar with Gary so morning briefings can factor in your schedule.",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Kyle",
+      "createdAt": "2026-02-24T23:32:20Z",
+      "updatedAt": "2026-02-24T23:32:20Z",
+      "tags": [
+        "infra"
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Connect Google Analytics + Search Console for 10-8video.com",
+      "description": "Give Gary read access to track SEO performance, flag drops, report wins.",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Kyle",
+      "createdAt": "2026-02-24T23:32:20Z",
+      "updatedAt": "2026-02-24T23:32:20Z",
+      "tags": [
+        "marketing",
+        "10-8"
+      ]
     }
   ]
 }
