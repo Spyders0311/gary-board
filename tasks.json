@@ -5,10 +5,10 @@
       "title": "Open Age Runner in Unity and hit Play",
       "description": "Unity 2022.3 LTS downloading. Run Age Runner â Build Scene, then Play.",
       "status": "todo",
-      "priority": "high",
+      "priority": "low",
       "assignee": "Kyle",
       "createdAt": "2026-02-24T00:00:00Z",
-      "updatedAt": "2026-02-24T00:00:00Z",
+      "updatedAt": "2026-02-24T20:44:08.610Z",
       "tags": [
         "game"
       ]
