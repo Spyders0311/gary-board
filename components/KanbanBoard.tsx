@@ -17,11 +17,16 @@ import KanbanColumn from "@/components/KanbanColumn";
 import CardModal from "@/components/CardModal";
 import Toast from "@/components/Toast";
 
-const statusOrder: Status[] = ["backlog", "todo", "inprogress", "done"];
+const generalStatusOrder: Status[] = ["backlog", "todo", "inprogress", "done"];
+const gameStatusOrder: Status[] = ["game-todo", "game-inprogress"];
+const statusOrder: Status[] = [...generalStatusOrder, ...gameStatusOrder];
 
 const groupByStatus = (tasks: Task[]) => {
-  const grouped: Record<Status, Task[]> = { backlog: [], todo: [], inprogress: [], done: [] };
-  tasks.forEach((t) => grouped[t.status].push(t));
+  const grouped: Record<Status, Task[]> = {
+    backlog: [], todo: [], inprogress: [], done: [],
+    "game-todo": [], "game-inprogress": [],
+  };
+  tasks.forEach((t) => grouped[t.status]?.push(t));
   return grouped;
 };
 
@@ -261,15 +266,23 @@ export default function KanbanBoard() {
       </div>
 
       {loading ? (
-        <div className="grid gap-4 lg:grid-cols-4">
-          {statusOrder.map((s) => (
-            <div key={s} className="h-40 animate-pulse rounded-2xl border border-border bg-card/50" />
-          ))}
+        <div className="space-y-6">
+          <div className="grid gap-4 lg:grid-cols-4">
+            {generalStatusOrder.map((s) => (
+              <div key={s} className="h-40 animate-pulse rounded-2xl border border-border bg-card/50" />
+            ))}
+          </div>
+          <div className="grid gap-4 lg:grid-cols-2">
+            {gameStatusOrder.map((s) => (
+              <div key={s} className="h-40 animate-pulse rounded-2xl border border-border bg-card/50" />
+            ))}
+          </div>
         </div>
       ) : (
         <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+          {/* General section */}
           <div className="grid gap-4 lg:grid-cols-4">
-            {statusOrder.map((status) => (
+            {generalStatusOrder.map((status) => (
               <KanbanColumn
                 key={status}
                 status={status}
@@ -278,6 +291,26 @@ export default function KanbanBoard() {
                 onSelect={setSelected}
               />
             ))}
+          </div>
+
+          {/* Game section */}
+          <div className="mt-8">
+            <div className="mb-3 flex items-center gap-2">
+              <span className="text-lg">🎮</span>
+              <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-muted">Video Game</h2>
+              <div className="flex-1 border-t border-border" />
+            </div>
+            <div className="grid gap-4 lg:grid-cols-2">
+              {gameStatusOrder.map((status) => (
+                <KanbanColumn
+                  key={status}
+                  status={status}
+                  tasks={grouped[status]}
+                  onAdd={handleAdd}
+                  onSelect={setSelected}
+                />
+              ))}
+            </div>
           </div>
         </DndContext>
       )}

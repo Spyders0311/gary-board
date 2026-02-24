@@ -1,4 +1,4 @@
-export type Status = "backlog" | "todo" | "inprogress" | "done";
+export type Status = "backlog" | "todo" | "inprogress" | "done" | "game-todo" | "game-inprogress";
 export type Priority = "critical" | "high" | "medium" | "low";
 export type Assignee = "Kyle" | "Gary" | "Both";
 
@@ -22,21 +22,27 @@ export const STATUS_LABELS: Record<Status, string> = {
   backlog: "Backlog",
   todo: "To Do",
   inprogress: "In Progress",
-  done: "Done"
+  done: "Done",
+  "game-todo": "Game To Do",
+  "game-inprogress": "Game In Progress",
 };
 
 export const STATUS_COLORS: Record<Status, string> = {
   backlog: "border-muted/40",
   todo: "border-blue/60",
   inprogress: "border-gold/60",
-  done: "border-emerald-500/50"
+  done: "border-emerald-500/50",
+  "game-todo": "border-violet-500/60",
+  "game-inprogress": "border-fuchsia-500/60",
 };
 
 export const STATUS_BADGES: Record<Status, string> = {
   backlog: "bg-slate-600/30 text-slate-200",
   todo: "bg-blue/30 text-blue-100",
   inprogress: "bg-gold/30 text-amber-100",
-  done: "bg-emerald-500/25 text-emerald-100"
+  done: "bg-emerald-500/25 text-emerald-100",
+  "game-todo": "bg-violet-500/25 text-violet-100",
+  "game-inprogress": "bg-fuchsia-500/25 text-fuchsia-100",
 };
 
 export const PRIORITY_STYLES: Record<Priority, string> = {
