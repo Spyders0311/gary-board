@@ -84,10 +84,10 @@
       "title": "Twitter/X API keys for Age Runner marketing",
       "description": "Need 5 keys from developer.twitter.com to start posting dev updates.",
       "status": "todo",
-      "priority": "medium",
+      "priority": "low",
       "assignee": "Kyle",
       "createdAt": "2026-02-24T00:00:00Z",
-      "updatedAt": "2026-02-24T00:00:00Z",
+      "updatedAt": "2026-02-24T20:44:31.599Z",
       "tags": [
         "marketing"
       ]
