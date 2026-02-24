@@ -3,13 +3,15 @@ import type { Assignee, Priority, Status, Task } from "@/lib/types";
 
 const priorities: Priority[] = ["critical", "high", "medium", "low"];
 const assignees: Assignee[] = ["Kyle", "Gary", "Both"];
-const statuses: Status[] = ["backlog", "todo", "inprogress", "done"];
+const statuses: Status[] = ["backlog", "todo", "inprogress", "done", "game-todo", "game-inprogress"];
 
 const labels: Record<Status, string> = {
   backlog: "Backlog",
   todo: "To Do",
   inprogress: "In Progress",
-  done: "Done"
+  done: "Done",
+  "game-todo": "Game To Do",
+  "game-inprogress": "Game In Progress",
 };
 
 type CardModalProps = {
