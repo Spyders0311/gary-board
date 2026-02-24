@@ -3,7 +3,7 @@
     {
       "id": "10",
       "title": "Setup gary-setup-blueprint integrations",
-      "description": "himalaya email, BluOS, Notion, Slack â see gary-setup-blueprint.md for full list.",
+      "description": "himalaya email, BluOS, Notion, Slack \u00e2\u0080\u0094 see gary-setup-blueprint.md for full list.",
       "status": "backlog",
       "priority": "low",
       "assignee": "Gary",
@@ -52,7 +52,7 @@
     },
     {
       "id": "4",
-      "title": "10-8 software landing page â go live",
+      "title": "10-8 software landing page \u00e2\u0080\u0094 go live",
       "description": "Currently on GitHub Pages at spyders0311.github.io/10-8-software. Wire contact form to real email.",
       "status": "inprogress",
       "priority": "high",
@@ -79,7 +79,7 @@
     },
     {
       "id": "8",
-      "title": "Ten8-Clean frontend â pushed to Spyders0311",
+      "title": "Ten8-Clean frontend \u00e2\u0080\u0094 pushed to Spyders0311",
       "description": "Pushed to github.com/Spyders0311/ten8-clean. Next: add /software page route.",
       "status": "inprogress",
       "priority": "high",
@@ -93,7 +93,7 @@
     {
       "id": "1",
       "title": "Open Age Runner in Unity and hit Play",
-      "description": "Unity 2022.3 LTS downloaded. Run Age Runner â Build Scene, then Play. Report any compile errors.",
+      "description": "Unity 2022.3 LTS downloaded. Run Age Runner \u00e2\u0086\u0092 Build Scene, then Play. Report any compile errors.",
       "status": "game-todo",
       "priority": "high",
       "assignee": "Kyle",
@@ -131,7 +131,7 @@
     },
     {
       "id": "9",
-      "title": "Age Runner marketing â launch strategy",
+      "title": "Age Runner marketing \u00e2\u0080\u0094 launch strategy",
       "description": "30-day content calendar, press kit, Play Store listing. Pending Twitter API access.",
       "status": "game-todo",
       "priority": "medium",
@@ -141,6 +141,20 @@
       "tags": [
         "marketing",
         "game"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Connect Facebook page for 10-8 Video",
+      "description": "Kyle getting admin access \u2014 once confirmed, set up Meta Developer app, get Page Access Token, wire up posting/inbox/insights.",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "Kyle",
+      "createdAt": "2026-02-24T23:16:55Z",
+      "updatedAt": "2026-02-24T23:16:55Z",
+      "tags": [
+        "marketing",
+        "10-8"
       ]
     }
   ]
