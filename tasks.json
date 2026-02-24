@@ -1,37 +1,28 @@
 {
   "tasks": [
     {
-      "id": "4",
-      "title": "10-8 software landing page — go live",
-      "description": "Currently on GitHub Pages at spyders0311.github.io/10-8-software. Wire contact form to real email.",
-      "status": "inprogress",
-      "priority": "high",
+      "id": "10",
+      "title": "Setup gary-setup-blueprint integrations",
+      "description": "himalaya email, BluOS, Notion, Slack â see gary-setup-blueprint.md for full list.",
+      "status": "backlog",
+      "priority": "low",
       "assignee": "Gary",
       "createdAt": "2026-02-24T00:00:00Z",
       "updatedAt": "2026-02-24T00:00:00Z",
-      "tags": ["website", "marketing"]
+      "tags": [
+        "infra"
+      ]
     },
     {
-      "id": "5",
-      "title": "Integrate software page into Ten8-Clean Next.js site",
-      "description": "Add app/software/ route to ten8-clean repo.",
-      "status": "inprogress",
-      "priority": "high",
-      "assignee": "Gary",
-      "createdAt": "2026-02-24T00:00:00Z",
-      "updatedAt": "2026-02-24T00:00:00Z",
-      "tags": ["website"]
-    },
-    {
-      "id": "8",
-      "title": "Ten8-Clean frontend — pushed to Spyders0311",
-      "description": "Pushed to github.com/Spyders0311/ten8-clean. Next: add /software page route.",
-      "status": "inprogress",
-      "priority": "high",
-      "assignee": "Gary",
-      "createdAt": "2026-02-24T00:00:00Z",
-      "updatedAt": "2026-02-24T00:00:00Z",
-      "tags": ["website"]
+      "id": "6160c065-ba2d-4c12-b2fa-1376f56ed87c",
+      "title": "Make ad for police 1",
+      "description": "",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Kyle",
+      "createdAt": "2026-02-24T21:05:02.718Z",
+      "updatedAt": "2026-02-24T21:05:02.718Z",
+      "tags": []
     },
     {
       "id": "6",
@@ -42,7 +33,9 @@
       "assignee": "Kyle",
       "createdAt": "2026-02-24T00:00:00Z",
       "updatedAt": "2026-02-24T00:00:00Z",
-      "tags": ["infra"]
+      "tags": [
+        "infra"
+      ]
     },
     {
       "id": "7",
@@ -53,29 +46,62 @@
       "assignee": "Kyle",
       "createdAt": "2026-02-24T00:00:00Z",
       "updatedAt": "2026-02-24T00:00:00Z",
-      "tags": ["marketing"]
+      "tags": [
+        "marketing"
+      ]
     },
     {
-      "id": "10",
-      "title": "Setup gary-setup-blueprint integrations",
-      "description": "himalaya email, BluOS, Notion, Slack — see gary-setup-blueprint.md for full list.",
-      "status": "backlog",
-      "priority": "low",
+      "id": "4",
+      "title": "10-8 software landing page â go live",
+      "description": "Currently on GitHub Pages at spyders0311.github.io/10-8-software. Wire contact form to real email.",
+      "status": "inprogress",
+      "priority": "high",
       "assignee": "Gary",
       "createdAt": "2026-02-24T00:00:00Z",
       "updatedAt": "2026-02-24T00:00:00Z",
-      "tags": ["infra"]
+      "tags": [
+        "website",
+        "marketing"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Integrate software page into Ten8-Clean Next.js site",
+      "description": "Add app/software/ route to ten8-clean repo.",
+      "status": "inprogress",
+      "priority": "high",
+      "assignee": "Gary",
+      "createdAt": "2026-02-24T00:00:00Z",
+      "updatedAt": "2026-02-24T00:00:00Z",
+      "tags": [
+        "website"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Ten8-Clean frontend â pushed to Spyders0311",
+      "description": "Pushed to github.com/Spyders0311/ten8-clean. Next: add /software page route.",
+      "status": "inprogress",
+      "priority": "high",
+      "assignee": "Gary",
+      "createdAt": "2026-02-24T00:00:00Z",
+      "updatedAt": "2026-02-24T00:00:00Z",
+      "tags": [
+        "website"
+      ]
     },
     {
       "id": "1",
       "title": "Open Age Runner in Unity and hit Play",
-      "description": "Unity 2022.3 LTS downloaded. Run Age Runner → Build Scene, then Play. Report any compile errors.",
+      "description": "Unity 2022.3 LTS downloaded. Run Age Runner â Build Scene, then Play. Report any compile errors.",
       "status": "game-todo",
       "priority": "high",
       "assignee": "Kyle",
       "createdAt": "2026-02-24T00:00:00Z",
       "updatedAt": "2026-02-24T00:00:00Z",
-      "tags": ["game"]
+      "tags": [
+        "game"
+      ]
     },
     {
       "id": "3",
@@ -86,7 +112,9 @@
       "assignee": "Kyle",
       "createdAt": "2026-02-24T00:00:00Z",
       "updatedAt": "2026-02-24T00:00:00Z",
-      "tags": ["game"]
+      "tags": [
+        "game"
+      ]
     },
     {
       "id": "2",
@@ -97,18 +125,23 @@
       "assignee": "Kyle",
       "createdAt": "2026-02-24T00:00:00Z",
       "updatedAt": "2026-02-24T00:00:00Z",
-      "tags": ["game"]
+      "tags": [
+        "game"
+      ]
     },
     {
       "id": "9",
-      "title": "Age Runner marketing — launch strategy",
+      "title": "Age Runner marketing â launch strategy",
       "description": "30-day content calendar, press kit, Play Store listing. Pending Twitter API access.",
       "status": "game-todo",
       "priority": "medium",
       "assignee": "Gary",
       "createdAt": "2026-02-24T00:00:00Z",
       "updatedAt": "2026-02-24T00:00:00Z",
-      "tags": ["marketing", "game"]
+      "tags": [
+        "marketing",
+        "game"
+      ]
     }
   ]
 }
