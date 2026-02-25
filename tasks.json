@@ -38,20 +38,6 @@
       ]
     },
     {
-      "id": "14",
-      "title": "Connect LinkedIn page for 10-8 Video",
-      "description": "Give Gary access to 10-8 Video LinkedIn page for B2B content posting.",
-      "status": "todo",
-      "priority": "high",
-      "assignee": "Kyle",
-      "createdAt": "2026-02-24T23:32:20Z",
-      "updatedAt": "2026-02-24T23:32:20Z",
-      "tags": [
-        "marketing",
-        "10-8"
-      ]
-    },
-    {
       "id": "15",
       "title": "Connect Google Calendar",
       "description": "Share calendar with Gary so morning briefings can factor in your schedule.",
@@ -170,6 +156,20 @@
       "assignee": "Kyle",
       "createdAt": "2026-02-24T23:16:55Z",
       "updatedAt": "2026-02-25T20:28:18.481Z",
+      "tags": [
+        "marketing",
+        "10-8"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Connect LinkedIn page for 10-8 Video",
+      "description": "Give Gary access to 10-8 Video LinkedIn page for B2B content posting.",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Kyle",
+      "createdAt": "2026-02-24T23:32:20Z",
+      "updatedAt": "2026-02-25T20:28:25.988Z",
       "tags": [
         "marketing",
         "10-8"
