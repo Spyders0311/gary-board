@@ -52,13 +52,13 @@
     },
     {
       "id": "4",
-      "title": "10-8 software landing page \u00e2\u0080\u0094 go live",
-      "description": "Currently on GitHub Pages at spyders0311.github.io/10-8-software. Wire contact form to real email.",
-      "status": "inprogress",
+      "title": "10-8 software landing page \u2014 go live",
+      "description": "Live at spyders0311.github.io/10-8-software. Contact form wired to solin@10-8video.com via FormSubmit.co (commit 98eceb1). NOTE: First form submission will trigger a one-time activation email to solin@10-8video.com — Kyle must click confirm link once.",
+      "status": "done",
       "priority": "high",
       "assignee": "Gary",
       "createdAt": "2026-02-24T00:00:00Z",
-      "updatedAt": "2026-02-24T00:00:00Z",
+      "updatedAt": "2026-02-25T07:00:00Z",
       "tags": [
         "website",
         "marketing"
@@ -67,25 +67,25 @@
     {
       "id": "5",
       "title": "Integrate software page into Ten8-Clean Next.js site",
-      "description": "Add app/software/ route to ten8-clean repo.",
-      "status": "inprogress",
+      "description": "Added app/software/page.tsx to ten8-clean repo (commit 5a69417). Full Next.js 14 server component with metadata, feature grid, pricing tiers, CTAs — matches Ten8-Clean design system.",
+      "status": "done",
       "priority": "high",
       "assignee": "Gary",
       "createdAt": "2026-02-24T00:00:00Z",
-      "updatedAt": "2026-02-24T00:00:00Z",
+      "updatedAt": "2026-02-25T07:00:00Z",
       "tags": [
         "website"
       ]
     },
     {
       "id": "8",
-      "title": "Ten8-Clean frontend \u00e2\u0080\u0094 pushed to Spyders0311",
-      "description": "Pushed to github.com/Spyders0311/ten8-clean. Next: add /software page route.",
-      "status": "inprogress",
+      "title": "Ten8-Clean frontend \u2014 pushed to Spyders0311",
+      "description": "Pushed to github.com/Spyders0311/ten8-clean (commit 73205f3, 2026-02-24). /software page route also added (commit 5a69417).",
+      "status": "done",
       "priority": "high",
       "assignee": "Gary",
       "createdAt": "2026-02-24T00:00:00Z",
-      "updatedAt": "2026-02-24T00:00:00Z",
+      "updatedAt": "2026-02-25T07:00:00Z",
       "tags": [
         "website"
       ]
