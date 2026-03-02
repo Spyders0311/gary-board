@@ -1,6 +1,19 @@
 {
   "tasks": [
     {
+      "id": "3d4ea55c-d350-4155-92ba-6b3a48b00dda",
+      "title": "Set up AWS (Amazon Web Services) hosting",
+      "description": "Configure AWS hosting account and architecture.",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Kyle",
+      "createdAt": "2026-03-02T19:14:11Z",
+      "updatedAt": "2026-03-02T19:14:11Z",
+      "tags": [
+        "infra"
+      ]
+    },
+    {
       "id": "10",
       "title": "Setup gary-setup-blueprint integrations",
       "description": "himalaya email, BluOS, Notion, Slack \u00e2\u0080\u0094 see gary-setup-blueprint.md for full list.",
