@@ -3,7 +3,7 @@
     {
       "id": "10",
       "title": "Setup gary-setup-blueprint integrations",
-      "description": "himalaya email, BluOS, Notion, Slack â see gary-setup-blueprint.md for full list.",
+      "description": "himalaya email, BluOS, Notion, Slack \u00e2\u0080\u0094 see gary-setup-blueprint.md for full list.",
       "status": "backlog",
       "priority": "low",
       "assignee": "Gary",
@@ -17,11 +17,11 @@
       "id": "6160c065-ba2d-4c12-b2fa-1376f56ed87c",
       "title": "Make ad for police 1",
       "description": "",
-      "status": "todo",
+      "status": "done",
       "priority": "medium",
       "assignee": "Kyle",
       "createdAt": "2026-02-24T21:05:02.718Z",
-      "updatedAt": "2026-02-24T21:05:02.718Z",
+      "updatedAt": "2026-03-02T14:16:48Z",
       "tags": []
     },
     {
@@ -67,7 +67,7 @@
     {
       "id": "17",
       "title": "Forward sales@10-8video.com to Solin@",
-      "description": "Gmail Settings → Forwarding → add Solin@10-8video.com. Gary will monitor sales emails automatically.",
+      "description": "Gmail Settings \u2192 Forwarding \u2192 add Solin@10-8video.com. Gary will monitor sales emails automatically.",
       "status": "todo",
       "priority": "high",
       "assignee": "Kyle",
@@ -81,7 +81,7 @@
     {
       "id": "18",
       "title": "Connect QuickBooks Online to Gary",
-      "description": "developer.intuit.com → Create app → Gary → Accounting read-only scope. Share Client ID + Secret with Gary.",
+      "description": "developer.intuit.com \u2192 Create app \u2192 Gary \u2192 Accounting read-only scope. Share Client ID + Secret with Gary.",
       "status": "todo",
       "priority": "high",
       "assignee": "Kyle",
@@ -95,7 +95,7 @@
     {
       "id": "19",
       "title": "Connect Zoho CRM Plus to Gary",
-      "description": "api-console.zoho.com → Add Client → Server-based. Share Client ID + Secret. Gary will help build out full QB → Zoho workflow.",
+      "description": "api-console.zoho.com \u2192 Add Client \u2192 Server-based. Share Client ID + Secret. Gary will help build out full QB \u2192 Zoho workflow.",
       "status": "todo",
       "priority": "high",
       "assignee": "Kyle",
@@ -150,7 +150,7 @@
     {
       "id": "11",
       "title": "Connect Facebook page for 10-8 Video",
-      "description": "Kyle getting admin access — once confirmed, set up Meta Developer app, get Page Access Token, wire up posting/inbox/insights.",
+      "description": "Kyle getting admin access \u2014 once confirmed, set up Meta Developer app, get Page Access Token, wire up posting/inbox/insights.",
       "status": "done",
       "priority": "high",
       "assignee": "Kyle",
@@ -178,7 +178,7 @@
     {
       "id": "13",
       "title": "Provide Twitter/X API keys",
-      "description": "developer.twitter.com — 5 keys needed. Gary has xurl skill ready. Needed for Age Runner + 10-8 Video social.",
+      "description": "developer.twitter.com \u2014 5 keys needed. Gary has xurl skill ready. Needed for Age Runner + 10-8 Video social.",
       "status": "done",
       "priority": "high",
       "assignee": "Kyle",
@@ -191,7 +191,7 @@
     {
       "id": "12",
       "title": "Provide Vercel token for Gary",
-      "description": "vercel.com/account/tokens — Gary needs this to deploy autonomously from cron jobs.",
+      "description": "vercel.com/account/tokens \u2014 Gary needs this to deploy autonomously from cron jobs.",
       "status": "done",
       "priority": "high",
       "assignee": "Kyle",
@@ -203,8 +203,8 @@
     },
     {
       "id": "4",
-      "title": "10-8 software landing page — go live",
-      "description": "Live at spyders0311.github.io/10-8-software. Contact form wired to solin@10-8video.com via FormSubmit.co (commit 98eceb1). NOTE: First form submission will trigger a one-time activation email to solin@10-8video.com â Kyle must click confirm link once.",
+      "title": "10-8 software landing page \u2014 go live",
+      "description": "Live at spyders0311.github.io/10-8-software. Contact form wired to solin@10-8video.com via FormSubmit.co (commit 98eceb1). NOTE: First form submission will trigger a one-time activation email to solin@10-8video.com \u00e2\u0080\u0094 Kyle must click confirm link once.",
       "status": "done",
       "priority": "high",
       "assignee": "Gary",
@@ -218,7 +218,7 @@
     {
       "id": "5",
       "title": "Integrate software page into Ten8-Clean Next.js site",
-      "description": "Added app/software/page.tsx to ten8-clean repo (commit 5a69417). Full Next.js 14 server component with metadata, feature grid, pricing tiers, CTAs â matches Ten8-Clean design system.",
+      "description": "Added app/software/page.tsx to ten8-clean repo (commit 5a69417). Full Next.js 14 server component with metadata, feature grid, pricing tiers, CTAs \u00e2\u0080\u0094 matches Ten8-Clean design system.",
       "status": "done",
       "priority": "high",
       "assignee": "Gary",
@@ -230,7 +230,7 @@
     },
     {
       "id": "8",
-      "title": "Ten8-Clean frontend — pushed to Spyders0311",
+      "title": "Ten8-Clean frontend \u2014 pushed to Spyders0311",
       "description": "Pushed to github.com/Spyders0311/ten8-clean (commit 73205f3, 2026-02-24). /software page route also added (commit 5a69417).",
       "status": "done",
       "priority": "high",
@@ -244,7 +244,7 @@
     {
       "id": "1",
       "title": "Open Age Runner in Unity and hit Play",
-      "description": "Unity 2022.3 LTS downloaded. Run Age Runner â Build Scene, then Play. Report any compile errors.",
+      "description": "Unity 2022.3 LTS downloaded. Run Age Runner \u00e2\u0086\u0092 Build Scene, then Play. Report any compile errors.",
       "status": "game-todo",
       "priority": "high",
       "assignee": "Kyle",
@@ -282,7 +282,7 @@
     },
     {
       "id": "9",
-      "title": "Age Runner marketing â launch strategy",
+      "title": "Age Runner marketing \u00e2\u0080\u0094 launch strategy",
       "description": "30-day content calendar, press kit, Play Store listing. Pending Twitter API access.",
       "status": "game-todo",
       "priority": "medium",
