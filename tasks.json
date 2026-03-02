@@ -1,6 +1,21 @@
 {
   "tasks": [
     {
+      "id": "53bc2adc-c465-46ef-b0fc-ac5b172e3aaf",
+      "title": "Find police upfitters (research & draft outreach)",
+      "description": "Research potential police vehicle upfitters as channel partners for ARSENAL in-car systems. Draft outreach messaging.",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Kyle",
+      "createdAt": "2026-03-02T19:16:50Z",
+      "updatedAt": "2026-03-02T19:16:50Z",
+      "tags": [
+        "10-8",
+        "marketing",
+        "sales"
+      ]
+    },
+    {
       "id": "3d4ea55c-d350-4155-92ba-6b3a48b00dda",
       "title": "Set up AWS (Amazon Web Services) hosting",
       "description": "Configure AWS hosting account and architecture.",
