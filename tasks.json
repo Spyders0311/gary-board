@@ -68,11 +68,11 @@
       "id": "17",
       "title": "Forward sales@10-8video.com to Solin@",
       "description": "Gmail Settings \u2192 Forwarding \u2192 add Solin@10-8video.com. Gary will monitor sales emails automatically.",
-      "status": "todo",
+      "status": "done",
       "priority": "high",
       "assignee": "Kyle",
       "createdAt": "2026-02-25T01:11:10Z",
-      "updatedAt": "2026-02-25T01:11:10Z",
+      "updatedAt": "2026-03-02T15:18:48Z",
       "tags": [
         "infra",
         "10-8"
