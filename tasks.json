@@ -14,6 +14,21 @@
       ]
     },
     {
+      "id": "upfitter-campaign-20260303T160723Z",
+      "title": "Police Upfitter Campaign (National)",
+      "description": "Build and run a national channel partner campaign for police upfitters: research, segmentation, outreach, follow-up, and dealer onboarding.",
+      "status": "inprogress",
+      "priority": "high",
+      "assignee": "Gary",
+      "createdAt": "2026-03-03T16:07:23Z",
+      "updatedAt": "2026-03-03T22:42:23.414Z",
+      "tags": [
+        "10-8",
+        "sales",
+        "campaign"
+      ]
+    },
+    {
       "id": "53bc2adc-c465-46ef-b0fc-ac5b172e3aaf",
       "title": "Find police upfitters (research & draft outreach)",
       "description": "Research potential police vehicle upfitters as channel partners for ARSENAL in-car systems. Draft outreach messaging.",
@@ -133,21 +148,6 @@
       "createdAt": "2026-02-24T21:05:02.718Z",
       "updatedAt": "2026-03-02T14:16:48Z",
       "tags": []
-    },
-    {
-      "id": "upfitter-campaign-20260303T160723Z",
-      "title": "Police Upfitter Campaign (National)",
-      "description": "Build and run a national channel partner campaign for police upfitters: research, segmentation, outreach, follow-up, and dealer onboarding.",
-      "status": "done",
-      "priority": "high",
-      "assignee": "Gary",
-      "createdAt": "2026-03-03T16:07:23Z",
-      "updatedAt": "2026-03-03T22:42:14.871Z",
-      "tags": [
-        "10-8",
-        "sales",
-        "campaign"
-      ]
     },
     {
       "id": "17",
